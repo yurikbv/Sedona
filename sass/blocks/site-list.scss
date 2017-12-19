@@ -1,0 +1,28 @@
+.menu-list {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    text-align: center;
+}
+
+.menu-list__item:not(.menu-list__item--logo) {
+    padding: 16px;
+    flex-basis: 20%;
+}
+
+.menu-list__link {
+    text-decoration: none;
+    font-weight: 700;
+    line-height: 26px;
+    color: $font-black;
+}
+
+.menu-list__item--logo {
+    flex-basis: 20%;
+}
+
+.menu-list__item--logo picture {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}

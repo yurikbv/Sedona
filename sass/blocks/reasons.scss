@@ -1,0 +1,36 @@
+.reasons {
+    display: flex;
+}
+
+.reasons-item {
+    text-align: center;
+}
+
+.reasons--images {
+    .reasons-item {
+        background-color: $bg-blue;
+        color: $white;
+        flex-basis: 33%;
+        flex-grow: 1;
+    }
+}
+
+.reasons__view {
+    flex-grow: 1;
+    height: 256px;
+}
+
+.reasons-item__title {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    margin: 50px 0 15px;
+}
+
+.reasons-item__numbers {
+    display: block;
+}
+
+.reasons-item__text {
+    display: block;
+}

@@ -1,0 +1,17 @@
+.main-header {
+    text-align: center;
+}
+
+.main-header__title {
+    margin-top: 45px;
+    display: block;
+    color: $font-black;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.main-header__description {
+    display: block;
+    margin: 35px 0 50px;
+}

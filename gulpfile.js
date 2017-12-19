@@ -60,7 +60,7 @@ gulp.task('watch',['sass'], function(){
         server: '.'
     });
     gulp.watch('sass/**/*.scss', ['sass']);
-    // gulp.watch('blocks/*.scss', ['sass']);
+    // gulp.watch('sass/blocks/*.scss', ['sass']);
     gulp.watch('*.html').on('change', server.reload);
 });
 
