@@ -1,11 +1,6 @@
-.page-header {
-    max-width: 1200px;
-    margin: 0 auto;
-    box-shadow: 0 5px 15px rgba(0,0,0,.2);
-}
 .page-header__logo {
     width: 100%;
-    background:  url("../../img/back-desktop.jpg") center bottom no-repeat #81b3d2;
+    background:  url("../img/back-desktop.jpg") center bottom no-repeat #81b3d2;
     background-size: cover;
     text-align: center;
 }
@@ -16,5 +11,5 @@
 
 .pager-header__waves {
     height: 57px;
-    background: transparent url("../../img/intro-triangle.svg") center top no-repeat;
+    background: transparent url("../img/intro-triangle.svg") center top no-repeat;
 }

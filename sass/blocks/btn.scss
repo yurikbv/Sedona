@@ -1,0 +1,30 @@
+.btn {
+    background-color: $bg-blue;
+    color: $white;
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    &:hover {
+        background-color: #669ec0;
+    }
+    &:active {
+        background-color: #5496bd;
+        color: rgba(255,255,255,0.3);
+    }
+}
+
+.btn--interesting {
+    margin: 50px 0 70px;
+    width: 100%;
+    padding: 15px;
+}
+
+@media (max-width: $tablet-width) {
+    .btn--interesting{
+        margin-bottom: 60px;
+    }
+}

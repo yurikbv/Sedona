@@ -1,0 +1,38 @@
+.features {
+    display: flex;
+}
+
+.features__item {
+    flex-basis: 400px;
+    text-align: center;
+    padding: 60px 40px;
+}
+
+.features__title ,
+.features__description {
+    display: block;
+}
+
+.features__image {
+    display: inline-block;
+    width: 77px;
+    height: 77px;
+}
+
+.features__title {
+    font-weight: bold;
+    color: $font-black;
+    font-size: 21px;
+    line-height: 26px;
+    margin-top: 20px;
+}
+
+.features__description {
+    margin-top: 30px;
+}
+
+@media (max-width: $tablet-width) {
+    .features__item {
+        padding: 40px;
+    }
+}

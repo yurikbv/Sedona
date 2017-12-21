@@ -1,0 +1,83 @@
+.page-footer {
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    background-color: $white;
+    align-items: center;
+}
+
+.footer-site {
+    font-size: 21px;
+    line-height: 26px;
+    color: $font-black;
+    font-weight: bold;
+    flex-basis: 400px;
+    text-align: center;
+}
+
+.footer-socials {
+    flex-basis: 400px;
+    text-align: center;
+}
+
+.footer-socials__link {
+    margin: 5px;
+    padding: 15px 25px;
+    &:hover {
+        background-color: #669ec0;
+    }
+    &:active {
+        background-color: #5496bd;
+    }
+}
+
+.link-twitter {
+    background: url("../../img/icon-twitter.svg") 15px 17px $bg-blue no-repeat;
+    &:active {
+        background-image: url("../../img/icon-twitter-active.svg");
+    }
+}
+
+.link-facebook {
+    background: url("../../img/icon-facebook.svg") 20px 15px $bg-blue no-repeat;
+    &:active {
+        background-image: url("../../img/icon-facebook-active.svg");
+    }
+}
+
+.link-Youtube {
+    background: url("../../img/icon-youtube.svg") 15px 17px $bg-blue no-repeat;
+    &:active {
+        background-image: url("../../img/icon-youtube-active.svg");
+    }
+}
+
+.footer-properties {
+    padding: 0 85px 10px 0;
+    text-align: right;
+    flex-basis: 400px;
+}
+
+.footer-properties__link {
+    text-decoration: none;
+}
+
+.footer-properties__image {
+    position: relative;
+    left: 10px;
+    top: 12px;
+}
+
+@media (max-width: $tablet-width) {
+    .footer-site,
+    .footer-socials,
+    .footer-properties {
+        flex-basis: 340px;
+    }
+    .footer-properties {
+        padding-right: 60px;
+    }
+    .footer-socials__link {
+        margin: 3px;
+    }
+}

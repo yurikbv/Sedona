@@ -1,0 +1,21 @@
+.interesting {
+    text-align: center;
+    width: 460px;
+    margin: 0 auto;
+}
+
+.interesting__title,
+.interesting__description {
+    display: block;
+}
+
+.interesting__title {
+    font-size: 30px;
+    line-height: 26px;
+    font-weight: bold;
+    padding-top: 55px;
+}
+
+.interesting__description {
+    margin-top: 35px;
+}
