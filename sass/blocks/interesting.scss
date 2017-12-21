@@ -19,3 +19,9 @@
 .interesting__description {
     margin-top: 35px;
 }
+
+@media (max-width: $tablet-width) {
+    .map img {
+        width: 100%;
+    }
+}

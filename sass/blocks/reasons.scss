@@ -10,10 +10,11 @@
     text-align: center;
     padding: 50px 55px 60px;
     flex-basis: 400px;
+    flex-grow: 1;
 }
 
 .reasons__view {
-    flex-grow: 1;
+    flex-grow: 2;
 }
 
 .reasons--images .reasons-item {
@@ -48,12 +49,15 @@
 @media (max-width: $tablet-width) {
     .reasons-item {
         padding: 45px 20px 40px;
-        flex-basis: 340px;
+        flex-basis: 256px;
     }
     .reasons-item__title {
         margin-bottom: 10px;
     }
-
+    .reasons--images .reasons-item {
+        padding: 45px 20px 40px;
+    }
     .reasons__view img{
+        width: 100%;
     }
 }

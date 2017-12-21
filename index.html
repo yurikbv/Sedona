@@ -14,14 +14,15 @@
 <div class="wrapper-outer">
     <header class="page-header">
         <!-------------------------------Menu---------------------------------------->
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+            <button class="main-nav__close"><span class="visually-hidden">Открыть меню</span></button>
             <ul class="main-nav__list menu-list">
                 <li class="menu-list__item"><a href="" class="menu-list__link menu-list__link--active">Главная</a></li>
                 <li class="menu-list__item"><a href="" class="menu-list__link">ФОТО И ВИДЕО</a></li>
                 <li class="menu-list__item--logo"><a href="" class="menu-list__link">
                     <picture>
-                        <source media="(max-width: 980px)" srcset="img/logotype-tablet.svg">
                         <source media="(max-width: 640px)" srcset="img/logotyle-mobile.svg">
+                        <source media="(max-width: 980px)" srcset="img/logotype-tablet.svg">
                         <img src="img/logotype-desktop.svg" alt="Logotype">
                     </picture>
                 </a></li>
@@ -55,8 +56,8 @@
             </div>
             <div class="reasons__view">
                 <picture>
-                    <source media="(max-width: 980px)" srcset="img/photo-city-tablet@1x.jpg">
                     <source media="(max-width: 640px)" srcset="img/photo-city-mobile@1x.jpg">
+                    <source media="(max-width: 980px)" srcset="img/photo-city-tablet@1x.jpg">
                     <img src="img/photo-city@1x.jpg" alt="">
                 </picture>
             </div>
@@ -92,8 +93,8 @@
             </div>
             <div class="reasons__view">
                 <picture>
-                    <source media="(max-width: 980px)" srcset="img/photo-bridge-tablet@1x.jpg">
                     <source media="(max-width: 640px)" srcset="img/photo-bridge-mobile@1x.jpg">
+                    <source media="(max-width: 980px)" srcset="img/photo-bridge-tablet@1x.jpg">
                     <img src="img/photo-bridge@1x.jpg" alt="">
                 </picture>
             </div>
@@ -125,8 +126,8 @@
         <!-------------------------------Map---------------------------------------->
         <section class="map">
             <picture>
-                <source media="(max-width: 980px)" srcset="img/map-tablet.jpg">
                 <source media="(max-width: 640px)" srcset="img/map-mobile.jpg">
+                <source media="(max-width: 980px)" srcset="img/map-tablet.jpg">
                 <img src="img/map-desktop.jpg" alt="">
             </picture>
         </section>

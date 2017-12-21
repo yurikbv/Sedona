@@ -37,7 +37,8 @@ gulp.task('image',function () {
                ]
            })
        ]))
-       .pipe(gulp.dest('img'));
+       .pipe(gulp.dest('img'))
+       .pipe(gulp.dest('sass/img'));
 });
 
 gulp.task('webp', function () {

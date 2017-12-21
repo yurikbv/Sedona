@@ -3,6 +3,7 @@
     justify-content: space-around;
     position: relative;
     text-align: center;
+    white-space: nowrap;
 }
 
 .menu-list__item:not(.menu-list__item--logo) {
@@ -41,4 +42,24 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+}
+
+@media (max-width: $mobile-width) {
+    .menu-list {
+        flex-direction: column;
+    }
+    .menu-list__link {
+        color: $white;
+    }
+    .menu-list__item {
+        flex-basis: $mobile-width;
+        background-color: $bg-blue;
+        border-bottom: 1px solid #678fa8;
+        border-top: 1px solid #9ac2db;
+    }
+    .menu-list__item--logo {
+        order: 2;
+        height: 60px;
+        box-shadow: 0 -3px 10px rgba(0,0,0,.2);
+    }
 }
