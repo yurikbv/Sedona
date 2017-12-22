@@ -28,3 +28,9 @@
         margin-bottom: 60px;
     }
 }
+
+@media (max-width: $mobile-width) {
+    .btn--interesting {
+        margin-top: 40px;
+    }
+}

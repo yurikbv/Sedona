@@ -25,3 +25,20 @@
         width: 100%;
     }
 }
+
+@media (max-width: $mobile-width) {
+    .interesting {
+        width: 100%;
+        padding: 0 20px;
+    }
+    .interesting__title {
+        font-size: 21px;
+        padding-top: 25px;
+    }
+    .interesting__description {
+        margin-top: 25px;
+    }
+    .interesting__description br {
+        display: none;
+    }
+}

@@ -13,3 +13,10 @@
     height: 57px;
     background: transparent url("../img/intro-triangle.svg") center top no-repeat;
 }
+
+@media (max-width: $mobile-width) {
+    .page-header__image {
+        padding: 0 20px;
+        margin: 85px 0 25px;
+    }
+}

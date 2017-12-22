@@ -50,12 +50,18 @@
     }
     .menu-list__link {
         color: $white;
+        font-size: 18px;
+        line-height: 40px;
+    }
+    .menu-list__item:not(.menu-list__item--logo) {
+        padding: 7px;
     }
     .menu-list__item {
         flex-basis: $mobile-width;
         background-color: $bg-blue;
         border-bottom: 1px solid #678fa8;
         border-top: 1px solid #9ac2db;
+        padding: 0;
     }
     .menu-list__item--logo {
         order: 2;

@@ -81,3 +81,23 @@
         margin: 3px;
     }
 }
+
+@media (max-width: $mobile-width) {
+    .page-footer {
+        display: block;
+        height: auto;
+    }
+    .footer-site {
+        display: block;
+        padding: 20px 0;
+    }
+    .footer-socials {
+        display: block;
+        padding-top: 35px;
+    }
+    .footer-properties {
+        text-align: center;
+        display: block;
+        padding: 35px 10px 35px 0;
+    }
+}
