@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sedona Home Page</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preload" href="fonts/PTSansRegular.woff" as="font">
+    <link rel="preload" href="fonts/PTSansBold.woff" as="font">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+<!-------------------------------Header---------------------------------------->
+<div class="wrapper-outer">
+    <header class="page-header">
+        <!-------------------------------Menu---------------------------------------->
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+            <button class="main-nav__close"><span class="visually-hidden">Открыть меню</span></button>
+            <ul class="main-nav__list menu-list">
+                <li class="menu-list__item"><a href="index.html" class="menu-list__link menu-list__link--active">Главная</a></li>
+                <li class="menu-list__item"><a href="" class="menu-list__link">ФОТО И ВИДЕО</a></li>
+                <li class="menu-list__item--logo"><a href="" class="menu-list__link">
+                    <picture>
+                        <source media="(max-width: 640px)" srcset="img/logotype-mobile.svg">
+                        <source media="(max-width: 980px)" srcset="img/logotype-tablet.svg">
+                        <img src="img/logotype-desktop.svg" alt="Logotype">
+                    </picture>
+                </a></li>
+                <li class="menu-list__item"><a href="" class="menu-list__link menu-list__link--active">Форма отзыва</a></li>
+                <li class="menu-list__item"><a href="" class="menu-list__link">HTML Academy</a></li>
+            </ul>
+            <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
+        </nav>
+        <!-------------------------------Logo---------------------------------------->
+        <div class="page-header__logo">
+            <img src="img/text-sedona.svg" alt="" class="page-header__image page-header__image--others">
+            <div class="pager-header__waves"></div>
+        </div>
+    </header>
+    <main class="page-main">
+        <header class="main-header main-header--others">
+            <strong class="main-header__title">Оставьте свой отзыв</strong>
+            <span class="main-header__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</span>
+        </header>
+        <section class="form">
+            <form action="" method="post" class="form-page">
+                <div class="form__impression">
+                    <b class="form__title">ВАше Общее впечатление:</b>
+                    <div><input type="radio" name="impression" id="plus">
+                        <label for="plus">Скорее положительное</label></div>
+                    <div><input type="radio" name="impression" id="minus">
+                        <label for="minus">Скорее отрицательное</label></div>
+                    <div><input type="radio" name="impression" id="hard">
+                        <label for="hard">Затрудняюсь ответить</label></div>
+                </div>
+                <div class="form__name">
+                    <b class="form__title">Представьтесь:</b>
+                    <div><label for="name">ИМЯ*:</label>
+                        <input type="text" name="" id="name" placeholder="Петр"></div>
+                    <div><label for="surname">ФАМИЛИЯ*:</label>
+                        <input type="text" name="" id="surname" placeholder="Иванов"></div>
+                    <div><label for="second">ОТЧЕСТВО:</label>
+                        <input type="text" name="" id="second" placeholder="Александрович"></div>
+                </div>
+                <div class="form__information">
+                    <b class="form__title">Контактная информация:</b>
+                    <div><label for="phone">Телефон*:</label>
+                        <input type="tel" id="phone"></div>
+                    <div><label for="email">Электронная почта*:</label>
+                        <input type="email" id="email"></div>
+                </div>
+                <div class="form__attractions">
+                    <b class="form__title">посещенные достопримечательности:</b>
+                    <input type="checkbox" name="" id="bridge">
+                    <label for="bridge">Мост Дьявола</label>
+                    <input type="checkbox" name="" id="mountain">
+                    <label for="mountain">Гора-Колокол</label>
+                    <input type="checkbox" name="" id="park">
+                    <label for="park">Слайд-парк</label>
+                    <input type="checkbox" name="" id="rocks">
+                    <label for="rocks">Красные скалы</label>
+                </div>
+                <div class="form__emotions">
+                    <b class="form__title">Опишите свои эмоции:</b>
+                    <textarea name="" cols="30" rows="10" title="motions"></textarea>
+                </div>
+            </form>
+        </section>
+    </main>
+    <!-------------------------------Footer---------------------------------------->
+    <footer class="page-footer">
+        <!-------------------------------Site---------------------------------------->
+        <div class="footer-site">#visitSEDONA</div>
+        <!-------------------------------Socials---------------------------------------->
+        <div class="footer-socials">
+            <a href="" class="footer-socials__link link-twitter"><span class="visually-hidden">Twitter</span></a>
+            <a href="" class="footer-socials__link link-facebook"><span class="visually-hidden">Facebook</span></a>
+            <a href="" class="footer-socials__link link-Youtube"><span class="visually-hidden">Youtube</span></a>
+        </div>
+        <!-------------------------------Properties---------------------------------------->
+        <div class="footer-properties">
+            Разработано<a href="" class="footer-properties__link">
+            <img src="img/htmlacademy.svg" alt="" class="footer-properties__image">
+        </a>
+        </div>
+    </footer>
+</div>
+<script src="js/style.js"></script>
+</body>
+</html>

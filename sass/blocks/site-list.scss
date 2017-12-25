@@ -49,9 +49,19 @@
         flex-direction: column;
     }
     .menu-list__link {
+        display: block;
         color: $white;
         font-size: 18px;
         line-height: 40px;
+        &:hover {
+            background-color: #669ec0;
+            color: $white;
+
+        }
+        &:active {
+            background-color: #5496bd;
+            color: rgba(255,255,255,0.3);
+        }
     }
     .menu-list__item:not(.menu-list__item--logo) {
         padding: 7px;
@@ -62,6 +72,15 @@
         border-bottom: 1px solid #678fa8;
         border-top: 1px solid #9ac2db;
         padding: 0;
+        &:hover {
+            background-color: #669ec0;
+            color: $white;
+
+        }
+        &:active {
+            background-color: #5496bd;
+            color: rgba(255,255,255,0.3);
+        }
     }
     .menu-list__item--logo {
         order: 2;

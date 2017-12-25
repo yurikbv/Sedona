@@ -1,0 +1,104 @@
+.form {
+    text-transform: none;
+    width: 960px;
+    margin: 0 auto;
+}
+
+.form-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form__title {
+    display: block;
+    font-weight: bold;
+    font-size: 21px;
+    text-transform: uppercase;
+    width: 320px;
+    margin: 50px auto 80px;
+}
+
+.form__impression ,
+.form__name {
+    flex-basis: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form__impression label {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form__impression label:before {
+    content: "";
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    display: block;
+    background-color: #f2f2f2;
+    border: 18px solid #f2f2f2;
+    border-radius: 50%;
+    left: 5px;
+    bottom: -15px;
+}
+
+.form__impression input:checked + label::before {
+    background-color: #333333;
+}
+
+.form__impression div {
+    position: relative;
+    margin-bottom: 55px;
+    padding-left: 80px;
+}
+
+.form__name .form__title {
+    margin-bottom: 60px;
+}
+
+.form__name div {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.form__name label {
+    margin-right: 10px;
+}
+
+.form__name input,
+.form__information input{
+    padding: 20px;
+    flex-grow: 1;
+    border: none;
+    background-color: #f2f2f2;
+}
+
+.form__name input::placeholder {
+    font-weight: bold;
+}
+
+.form__impression input,
+.form__attractions input {
+    display: none;
+}
+
+.form__information {
+    flex-basis: 960px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.form__information .form__title {
+    margin-top: 30px;
+    flex-basis: 960px;
+}
+
+.form__information .form__title {
+}

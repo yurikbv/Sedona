@@ -26,11 +26,12 @@
     }
     .main-nav__toggle,
     .main-nav__close{
-        height: 24px;
-        width: 24px;
+        height: 50px;
+        width: 50px;
         display: block;
         position: absolute;
         background-color: transparent;
+        outline: none;
     }
     .main-nav__toggle {
         bottom: 5px;
@@ -38,20 +39,29 @@
     .main-nav__toggle::before {
         content: "";
         position: absolute;
-        top: -15px;
-        right: 0;
+        right: 12px;
+        top: 15px;
+        background-color: $bg-blue;
+    }
+    .main-nav--closed .main-nav__toggle::before {
         width: 24px;
         height: 4px;
-        background-color: $bg-blue;
         box-shadow: 0 8px 0 0 $bg-blue, 0 16px 0 0 $bg-blue;
     }
+    .main-nav--opened .main-nav__toggle::before {
+        right: 30px;
+        width: 4px;
+        height: 24px;
+        box-shadow: 8px 0 0 0 $bg-blue, 16px 0 0 0 $bg-blue;
+    }
     .main-nav__close {
-        top: 15px;
+        top: 2px;
         &::before,
         &::after {
             content: "";
+            right: 10px;
+            top: 22px;
             position: absolute;
-            left: 0;
             width: 28px;
             height: 4px;
             background-color: #ffffff;
@@ -63,12 +73,15 @@
             transform: rotate(-45deg);
         }
     }
-
-    .main-nav--opened .menu-list__item {
+    .main-nav--opened .menu-list__item
+     {
         display: block;
     }
     .main-nav--closed .menu-list__item {
         display: none;
+    }
+    .main-nav--nojs .menu-list__item {
+        display: block;
     }
 }
 

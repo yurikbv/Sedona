@@ -1,5 +1,12 @@
 .main-header {
     text-align: center;
+    width: 550px;
+    margin: 0 auto;
+}
+
+.main-header--others .main-header__title {
+    padding-top: 105px;
+    font-size: 30px;
 }
 
 .main-header__title {
@@ -9,6 +16,10 @@
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
+}
+
+.main-header--others .main-header__description {
+    margin-bottom: 15px;
 }
 
 .main-header__description {

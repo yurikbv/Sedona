@@ -19,10 +19,14 @@
 .interesting__description {
     margin-top: 35px;
 }
+.map {
+    height: 350px;
+    background: url("../img/map-desktop.jpg") no-repeat;
+}
 
 @media (max-width: $tablet-width) {
-    .map img {
-        width: 100%;
+    .map {
+        background: url("../img/map-tablet.jpg");
     }
 }
 
@@ -40,5 +44,8 @@
     }
     .interesting__description br {
         display: none;
+    }
+    .map {
+        background: url("../img/map-mobile.jpg");
     }
 }

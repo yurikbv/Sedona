@@ -4,6 +4,7 @@
     justify-content: space-between;
     background-color: $white;
     align-items: center;
+    padding-bottom: 30px;
 }
 
 .footer-site {
@@ -93,11 +94,11 @@
     }
     .footer-socials {
         display: block;
-        padding-top: 35px;
+        padding-top: 30px;
     }
     .footer-properties {
         text-align: center;
         display: block;
-        padding: 35px 10px 35px 0;
+        padding: 35px 10px;
     }
 }
