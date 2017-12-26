@@ -27,7 +27,20 @@
     margin: 35px 0 50px;
 }
 
+@media all and (max-width: $tablet-width) {
+    .main-header--others .main-header__title {
+        padding-top: 80px;
+        font-size: 30px;
+    }
+}
+
 @media (max-width: $mobile-width) {
+    .main-header {
+        width: 100%;
+    }
+    .main-header--others {
+        border-bottom: 1px solid #e5e5e5;
+    }
     .main-header__title {
         padding: 40px 20px 0;
         font-size: 18px;
@@ -39,5 +52,9 @@
     }
     .main-header__title br {
         display: none;
+    }
+    .main-header--others .main-header__title {
+        padding-top: 40px;
+        font-size: 18px;
     }
 }

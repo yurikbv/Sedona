@@ -18,7 +18,7 @@
         <nav class="main-nav main-nav--closed main-nav--nojs">
             <button class="main-nav__close"><span class="visually-hidden">Открыть меню</span></button>
             <ul class="main-nav__list menu-list">
-                <li class="menu-list__item"><a href="index.html" class="menu-list__link menu-list__link--active">Главная</a></li>
+                <li class="menu-list__item"><a href="index.html" class="menu-list__link">Главная</a></li>
                 <li class="menu-list__item"><a href="" class="menu-list__link">ФОТО И ВИДЕО</a></li>
                 <li class="menu-list__item--logo"><a href="" class="menu-list__link">
                     <picture>
@@ -66,24 +66,28 @@
                 <div class="form__information">
                     <b class="form__title">Контактная информация:</b>
                     <div><label for="phone">Телефон*:</label>
-                        <input type="tel" id="phone"></div>
+                        <input type="tel" id="phone" placeholder="Введите телефон"></div>
                     <div><label for="email">Электронная почта*:</label>
-                        <input type="email" id="email"></div>
+                        <input type="email" id="email" placeholder="Введите e-mail"></div>
                 </div>
                 <div class="form__attractions">
-                    <b class="form__title">посещенные достопримечательности:</b>
-                    <input type="checkbox" name="" id="bridge">
-                    <label for="bridge">Мост Дьявола</label>
-                    <input type="checkbox" name="" id="mountain">
-                    <label for="mountain">Гора-Колокол</label>
-                    <input type="checkbox" name="" id="park">
-                    <label for="park">Слайд-парк</label>
-                    <input type="checkbox" name="" id="rocks">
-                    <label for="rocks">Красные скалы</label>
+                    <b class="form__title">посещенные <br> достопримечательности:</b>
+                    <div><input type="checkbox" name="" id="bridge">
+                        <label for="bridge">Мост Дьявола</label></div>
+                    <div><input type="checkbox" name="" id="mountain">
+                        <label for="mountain">Гора-Колокол</label></div>
+                    <div><input type="checkbox" name="" id="park">
+                        <label for="park">Слайд-парк</label></div>
+                    <div><input type="checkbox" name="" id="rocks">
+                        <label for="rocks">Красные скалы</label></div>
                 </div>
                 <div class="form__emotions">
                     <b class="form__title">Опишите свои эмоции:</b>
-                    <textarea name="" cols="30" rows="10" title="motions"></textarea>
+                    <textarea name="" cols="30" rows="8" title="motions" placeholder="Опишите подробно все свои восторги "></textarea>
+                </div>
+                <div class="form__send">
+                    <input type="submit" class="btn" value="ОТПРАВИТЬ ОТЗЫВ">
+                    <span>* — обязательные поля</span>
                 </div>
             </form>
         </section>
