@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sedona Photo Page</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preload" href="fonts/PTSansRegular.woff" as="font">
+    <link rel="preload" href="fonts/PTSansBold.woff" as="font">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<!-------------------------------Header---------------------------------------->
+<div class="wrapper-outer">
+    <header class="page-header">
+        <!-------------------------------Menu---------------------------------------->
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+            <button class="main-nav__close"><span class="visually-hidden">Открыть меню</span></button>
+            <ul class="main-nav__list menu-list">
+                <li class="menu-list__item"><a href="index.html" class="menu-list__link">Главная</a></li>
+                <li class="menu-list__item"><a class="menu-list__link menu-list__link--active">ФОТО И ВИДЕО</a></li>
+                <li class="menu-list__item--logo"><a href="" class="menu-list__link">
+                    <picture>
+                        <source media="(max-width: 640px)" srcset="img/logotype-mobile.svg">
+                        <source media="(max-width: 980px)" srcset="img/logotype-tablet.svg">
+                        <img src="img/logotype-desktop.svg" alt="Logotype">
+                    </picture>
+                </a></li>
+                <li class="menu-list__item"><a href="form.html" class="menu-list__link">Форма отзыва</a></li>
+                <li class="menu-list__item"><a href="" class="menu-list__link">HTML Academy</a></li>
+            </ul>
+            <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
+        </nav>
+        <!-------------------------------Logo---------------------------------------->
+        <div class="page-header__logo">
+            <img src="img/text-sedona.svg" alt="" class="page-header__image page-header__image--others">
+            <div class="pager-header__waves"></div>
+        </div>
+    </header>
+    <main class="page-main">
+        <header class="main-header main-header--others">
+            <strong class="main-header__title">Фото и видео</strong>
+            <span class="main-header__description">Не можете решиться на путешествие из-за курса?Фотографии помогут вам забыть о политике и экономике.</span>
+        </header>
+        <section class="photo-page">
+            <div class="photo__item">
+                <picture>
+                    <source media="(max-width: 640px)" srcset="img/photo-1-mobile.jpg">
+                    <source media="(max-width: 980px)" srcset="img/photo-1-tablet.jpg">
+                    <img src="img/photo-1-desktop.jpg" alt="Logotype">
+                </picture>
+                <div class="photo__text">
+                    <div class="photo__author">
+                        <b class="photo__author-title">неродные просторы</b>
+                        <span class="photo__author-name">Автор фото: Борис</span>
+                    </div>
+                    <div class="photo__likes">
+                        <button class="photo__likes-btn">
+                            <picture>
+                                <source media="(max-width: 640px)" srcset="img/like-icon-tablet.svg">
+                                <source media="(max-width: 980px)" srcset="img/like-icon-tablet2.svg">
+                                <img src="img/like-icon.svg" alt="" class="photo__image">
+                            </picture>
+                        </button>
+                        <span class="photo__likes-number">1350</span>
+                    </div>
+                </div>
+            </div>
+            <div class="photo__item">
+                <picture>
+                    <source media="(max-width: 640px)" srcset="img/photo-2-mobile.jpg">
+                    <source media="(max-width: 980px)" srcset="img/photo-2-tablet.jpg">
+                    <img src="img/photo-2-desktop.jpg" alt="" class="photo__image">
+                </picture>
+                <div class="photo__text">
+                    <div class="photo__author">
+                        <b class="photo__author-title">Местная растительность</b>
+                        <span class="photo__author-name">Автор фото: Сергей</span>
+                    </div>
+                    <div class="photo__likes">
+                        <button class="photo__likes-btn">
+                            <picture>
+                                <source media="(max-width: 640px)" srcset="img/like-icon-tablet.svg">
+                                <source media="(max-width: 980px)" srcset="img/like-icon-tablet2.svg">
+                                <img src="img/like-icon.svg" alt="" class="photo__image">
+                            </picture>
+                        </button>
+                        <span class="photo__likes-number">143</span>
+                    </div>
+                </div>
+            </div>
+            <div class="photo__item">
+                <picture>
+                    <source media="(max-width: 640px)" srcset="img/photo-3-mobile.jpg">
+                    <source media="(max-width: 980px)" srcset="img/photo-3-tablet.jpg">
+                    <img src="img/photo-3-desktop.jpg" alt="" class="photo__image">
+                </picture>
+                <div class="photo__text">
+                    <div class="photo__author">
+                        <b class="photo__author-title">Дорога на север</b>
+                        <span class="photo__author-name">Автор фото: Петр</span>
+                    </div>
+                    <div class="photo__likes">
+                        <button class="photo__likes-btn">
+                            <picture>
+                                <source media="(max-width: 640px)" srcset="img/like-icon-tablet.svg">
+                                <source media="(max-width: 980px)" srcset="img/like-icon-tablet2.svg">
+                                <img src="img/like-icon.svg" alt="" class="photo__image">
+                            </picture>
+                        </button>
+                        <span class="photo__likes-number">96</span>
+                    </div>
+                </div>
+            </div>
+            <div class="photo__item">
+                <picture>
+                    <source media="(max-width: 640px)" srcset="img/photo-4-mobile.jpg">
+                    <source media="(max-width: 980px)" srcset="img/photo-4-tablet.jpg">
+                    <img src="img/photo-4-desktop.jpg" alt="" class="photo__image">
+                </picture>
+                <div class="photo__text">
+                    <div class="photo__author">
+                        <b class="photo__author-title">Мост дьявола</b>
+                        <span class="photo__author-name">Автор фото: Антон</span>
+                    </div>
+                    <div class="photo__likes">
+                        <button class="photo__likes-btn">
+                            <picture>
+                                <source media="(max-width: 640px)" srcset="img/like-icon-tablet.svg">
+                                <source media="(max-width: 980px)" srcset="img/like-icon-tablet2.svg">
+                                <img src="img/like-icon.svg" alt="" class="photo__image">
+                            </picture>
+                        </button>
+                        <span class="photo__likes-number">256</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <header class="photo-header">
+            <strong class="photo-header__title">Все еще сомневаетесь?</strong>
+            <span class="photo-header__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</span>
+        </header>
+        <section class="video">
+            <video controls="controls">
+                <source src="video/Sedona%20Skies%20-%202016.MP4" type="video/mp4">
+            </video>
+        </section>
+    </main>
+    <!-------------------------------Footer---------------------------------------->
+    <footer class="page-footer">
+        <!-------------------------------Site---------------------------------------->
+        <div class="footer-site">#visitSEDONA</div>
+        <!-------------------------------Socials---------------------------------------->
+        <div class="footer-socials">
+            <a href="" class="footer-socials__link link-twitter"><span class="visually-hidden">Twitter</span></a>
+            <a href="" class="footer-socials__link link-facebook"><span class="visually-hidden">Facebook</span></a>
+            <a href="" class="footer-socials__link link-Youtube"><span class="visually-hidden">Youtube</span></a>
+        </div>
+        <!-------------------------------Properties---------------------------------------->
+        <div class="footer-properties">
+            Разработано<a href="" class="footer-properties__link">
+            <img src="img/htmlacademy.svg" alt="" class="footer-properties__image">
+        </a>
+        </div>
+    </footer>
+</div>
+<script src="js/style.js"></script>
+</body>
+</html>

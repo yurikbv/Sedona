@@ -51,8 +51,22 @@
     bottom: -15px;
 }
 
+.form__impression input + label:hover::before {
+    background-color: #e5e5e5;
+    border: 18px solid #e5e5e5;
+}
+
+.form__impression input + label:active::before {
+    background-color: #d5d5d5;
+    border: 18px solid #d5d5d5;
+}
+
 .form__impression input:checked + label::before {
     background-color: #333333;
+}
+
+.form__impression input:checked + label:active::before {
+    background-color: #a4a4a4;
 }
 
 .form__impression div {
@@ -91,6 +105,17 @@
     flex-grow: 1;
     border: none;
     background-color: #f2f2f2;
+}
+
+.form__name input:hover,
+.form__information input:hover {
+    background-color: #e5e5e5;
+}
+
+.form__name input:focus,
+.form__information input:focus {
+    background-color: #ffffff;
+    outline-color: #e5e5e5;
 }
 
 .form__name input::placeholder {
@@ -199,8 +224,24 @@
     border-radius: 5px;
 }
 
+.form__attractions label:hover::before {
+    background-color: #e5e5e5;
+}
+
+.form__attractions label:active::before {
+    background-color: #d5d5d5;
+}
+
 .form__attractions input:checked + label::before {
     background: url("../../img/tick.svg") center center no-repeat #f2f2f2;
+}
+
+.form__attractions input:checked + label:hover::before {
+    background-color: #e5e5e5;
+}
+
+.form__attractions input:checked + label:active::before {
+    background-color:  #d5d5d5;
 }
 
 .form__emotions {

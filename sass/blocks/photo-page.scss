@@ -1,0 +1,134 @@
+.photo-page {
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.photo-header {
+    text-align: center;
+    width: 550px;
+    margin: 0 auto;
+}
+
+.photo-header__title {
+    font-weight: bold;
+    display: block;
+    font-size: 30px;
+    padding-top: 75px;
+}
+
+.photo-header__description {
+    display: block;
+    margin: 35px 0 70px;
+    line-height: 24px;
+}
+
+.photo__item:first-child {
+    flex-basis: 100%;
+    position: relative;
+}
+
+.photo__item {
+    flex-basis: 320px;
+    position: relative;
+    flex-grow: 1;
+}
+
+
+.photo__item img {
+    display: block;
+}
+
+.photo__text {
+    width: auto;
+    color: $white;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 80px;
+    background-color: rgba(0,0,0,.3);
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+
+.photo__author {
+    margin-left: 20px;
+    align-self: center;
+}
+
+.photo__author-title,
+.photo__author-name {
+    display: block;
+}
+
+.photo__author-title {
+    font-weight: bold;
+    line-height: 24px;
+}
+
+.photo__author-name {
+    text-transform: none;
+}
+
+.photo__likes {
+    align-self: center;
+    margin-right: 25px;
+}
+
+.photo__likes-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.photo__likes-number {
+    position: relative;
+    bottom: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+@media (max-width: $tablet-width) {
+    .photo-page {
+        padding: 0 60px;
+    }
+    .photo__item {
+        flex-grow: 1;
+        flex-basis: 210px;
+    }
+    .photo__item img {
+        width: 100%;
+    }
+    .photo__text {
+        position: relative;
+        background-color: #f2f2f2;
+        color: #000000;
+    }
+    .photo__author-title {
+        color: #333333;
+    }
+}
+
+@media (max-width: $mobile-width) {
+    .photo-page {
+        padding: 0 20px;
+    }
+    .photo__text {
+        background-color: #ffffff;
+    }
+    .photo__item {
+        flex-basis: 100%;
+    }
+    .photo__text {
+        flex-wrap: wrap;
+    }
+    .photo__author {
+        flex-basis: 100%;
+    }
+    .photo__likes {
+        padding-left: 15px;
+    }
+}
+
